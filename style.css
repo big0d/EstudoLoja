@@ -1,0 +1,72 @@
+*{
+    margin: 0; /*zerar as extremidades*/
+    padding: 0; /*espaçamento interno*/
+    font-size: 100%; /*100% do tamanho*/
+    font-family: 'Poppins', sans-serif; /*estilo de fonte*/
+    font-weight: normal; /*largura da letra*/
+    box-sizing: border-box; /*preenchimento da caixinha do elemento*/
+    border: none; /*sem borda*/
+    outline: none; /*linha de fundo*/
+}
+
+img{
+    max-width: 100%; /*tamanho maximo*/
+}
+
+ul{
+    list-style: none;
+}
+
+/*anchor*/
+a{
+    text-decoration: none; /*tira a decoração que vem por padrão*/
+}
+
+h2{
+    font-size: 1.5em;
+    color: #333;
+}
+
+p{
+    font-size: 1em;
+    color: #777;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    width: 100%; /* largura de 100% da página */
+    float: left; /* flutuar a esquerda */
+    padding: 50px 8%; /* espaçamento interno de 50px absoluto e 8% relativo para ser melhor responsivo */
+    background-color: #13c7ae;
+}
+
+.logo a{
+    width: 221px;
+    height: 48px;
+    float: left;
+    background: url(../img/logo.png) no-repeat; /* o ../ é sempre saída para voltar uma pasta e acessar arquivos de outros lugares. no repet nao repete a imagem */
+    font-size: 0; /* para zerar o texto */
+}
+
+.cabecalho form{
+    width: 30%;
+    float: right;
+}
+
+.cabecalho form input[type="text"]{
+    width: 85%;
+    float: left;
+    padding: 15px 10px;
+    border-radius: 5px 0 0 5px;
+    /* colocar 0 nos lugares que nao devem ser arredondados e arredondar como quiser os outros */
+}
+
+.cabecalho button{
+    width: 15%; /* meu cabeçalho tem 100%, 15% é pro botão, 80% input */
+    float: right;
+    padding: 15px 10px;
+    background-color: #0cae98;
+    color: #fff;
+    cursor: pointer; /* muda o estilo do mouse quando vc passa em cima do objeto */
+    border-radius: 0 5px 5px 0;
+}
